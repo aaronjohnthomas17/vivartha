@@ -64,29 +64,38 @@ A working text-to-Malayalam translation platform.
 
 ---
 
-## Phase 2 — Voice Translation
+## Phase 2 — Text File Translation
 
 ### Purpose
-Allow users to provide spoken language and translate it into Malayalam.
+Allow users to upload a text file, identify its language, translate its contents into Malayalam, and view the translated result.
 
 ### Main Workflow
-**Voice Input → Speech-to-Text → User Verification/Editing → Translation → Malayalam Output**
+**Text File Upload → Language Identification → Text Extraction → Translation → Malayalam Output**
 
 ### Main Features
-- Record voice.
-- Upload audio where appropriate.
-- Convert speech to text.
-- Display the recognized transcript.
-- Allow the user to correct or edit the transcript.
-- Translate the verified text.
-- Store relevant translation history.
+- Upload a supported text file.
+- Extract the file's text content.
+- Identify the uploaded text's source language.
+- Translate the identified text into Malayalam.
+- Display the translated Malayalam output.
+- Show clear validation and processing errors.
+- Store relevant translation history where the approved privacy policy allows it.
+
+### Acceptance Criteria
+- The user can upload a supported text file through the interface.
+- VIVARTHA extracts the text without silently losing content.
+- VIVARTHA identifies the source language and displays the detected language.
+- VIVARTHA translates the extracted text into Malayalam.
+- The Malayalam translation is displayed to the user after processing completes.
+- Unsupported, empty, unreadable, or excessively large files produce understandable errors.
+- Representative files in the supported source languages are tested end to end.
 
 ### Output
-A voice-to-Malayalam translation workflow with transcript verification.
+A text-file-to-Malayalam translation workflow with automatic language identification and displayed output.
 
 ---
 
-## Phase 3 — File & Image Translation
+## Phase 3 — Document & Image Translation
 
 ### Purpose
 Allow users to translate documents, books/materials, and images without manually entering all the text.
@@ -94,7 +103,6 @@ Allow users to translate documents, books/materials, and images without manually
 ### Planned Input Types
 - PDF
 - DOCX
-- TXT
 - Images/photos
 - Scanned documents
 - Other suitable document formats as the platform evolves
@@ -212,10 +220,10 @@ Phase 1
 Core Text Translation MVP
         ↓
 Phase 2
-Voice Translation
+Text File Translation
         ↓
 Phase 3
-File & Image Translation
+Document & Image Translation
         ↓
 Phase 4
 Community Platform
