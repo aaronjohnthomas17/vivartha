@@ -6,4 +6,5 @@ translation-service/__pycache__/
 translation-service/*.log
 translation-service/*.err.log
 *.pyc
+*.log
 .env
