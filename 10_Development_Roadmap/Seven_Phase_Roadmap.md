@@ -9,6 +9,8 @@ Objective: usable text-to-Malayalam workflow. Prerequisites: Phase 0 gate, model
 **Current status:** Phase 1 implementation and validation are complete from a core-MVP perspective. The pipeline is operational, the frozen benchmark baseline is documented, and known translation-quality limitations are recorded for future improvement. The immediate next action is to formally close Phase 1 and approve Phase 2 scope; Phase 2 must not begin automatically.
 
 ## Phase 2 — Text File Translation
+**Status:** Implementation started after Phase 1 approval. The first slice adds bounded `.txt`, `.md`, and `.csv` upload, UTF-8 extraction, lightweight language detection, translation integration, and Malayalam output display. Remaining work is representative-file testing, stronger detection evaluation, privacy/retention decisions, and error-path verification.
+
 Prerequisite: Phase 1 workflow and language-identification evaluation. Tasks: supported text-file upload, safe text extraction, automatic source-language identification, translation integration, Malayalam output display, validation, limits, and privacy. Deliverable: verified text-file-to-Malayalam workflow. Test representative languages, encoding, empty/unreadable files, size limits, unsupported formats, detection errors, translation errors, and deletion/retention behavior.
 
 ## Phase 3 — Document & Image Translation
