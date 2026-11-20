@@ -1,0 +1,5 @@
+
+> dev
+> node --watch src/server.js
+
+VIVARTHA backend listening on http://127.0.0.1:3001

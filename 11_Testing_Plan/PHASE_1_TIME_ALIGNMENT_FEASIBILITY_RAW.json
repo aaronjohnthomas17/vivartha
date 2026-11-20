@@ -1,0 +1,657 @@
+{
+  "model": "ai4bharat/indictrans2-indic-indic-dist-320M",
+  "target": "mal_Mlym",
+  "clock_regex": "(?<!\\d)(?:[01]?\\d|2[0-3]):[0-5]\\d(?!\\d)",
+  "case_count": 20,
+  "trace_count": 9,
+  "matrix": [
+    {
+      "language": "ta",
+      "source": "நான் 4:15 மணிக்கு வீட்டிற்கு வருவேன்.",
+      "detection": [
+        {
+          "value": "4:15",
+          "start": 5,
+          "end": 9,
+          "context": "நான் 4:15 மணிக்கு வீட"
+        }
+      ],
+      "removed_source": "நான்  மணிக்கு வீட்டிற்கு வருவேன்.",
+      "removed_output": "മണിക്കൂറിനുള്ളിൽ ഞാൻ വീട്ടിലേക്ക് വരും."
+    },
+    {
+      "language": "ta",
+      "source": "வகுப்பு 10:20 மணிக்கு தொடங்கும்.",
+      "detection": [
+        {
+          "value": "10:20",
+          "start": 8,
+          "end": 13,
+          "context": "வகுப்பு 10:20 மணிக்கு தொட"
+        }
+      ],
+      "removed_source": "வகுப்பு  மணிக்கு தொடங்கும்.",
+      "removed_output": "മണിക്കൂറുകൾക്കുള്ളിൽ ക്ലാസ് ആരംഭിക്കും."
+    },
+    {
+      "language": "ta",
+      "source": "அவர் 7:30 மணிக்கு அலுவலகத்தை அடைந்தார்.",
+      "detection": [
+        {
+          "value": "7:30",
+          "start": 5,
+          "end": 9,
+          "context": "அவர் 7:30 மணிக்கு அலு"
+        }
+      ],
+      "removed_source": "அவர்  மணிக்கு அலுவலகத்தை அடைந்தார்.",
+      "removed_output": "മണിക്കൂറുകൾക്കുള്ളിൽ അദ്ദേഹം ഓഫീസിലെത്തി."
+    },
+    {
+      "language": "ta",
+      "source": "நாம் நாளை 6:45 மணிக்கு சந்திப்போம்.",
+      "detection": [
+        {
+          "value": "6:45",
+          "start": 10,
+          "end": 14,
+          "context": "நாம் நாளை 6:45 மணிக்கு சந்"
+        }
+      ],
+      "removed_source": "நாம் நாளை  மணிக்கு சந்திப்போம்.",
+      "removed_output": "നാളെ വൈകുന്നേരം ഞങ്ങൾ കൂടിക്കാഴ്ച നടത്തും."
+    },
+    {
+      "language": "te",
+      "source": "నేను 4:15కి ఇంటికి వస్తాను.",
+      "detection": [
+        {
+          "value": "4:15",
+          "start": 5,
+          "end": 9,
+          "context": "నేను 4:15కి ఇంటికి వస"
+        }
+      ],
+      "removed_source": "నేను కి ఇంటికి వస్తాను.",
+      "removed_output": "ഞാൻ കിക്ക് വീട്ടിലേക്ക് വരും."
+    },
+    {
+      "language": "te",
+      "source": "తరగతి 10:20కి ప్రారంభమవుతుంది.",
+      "detection": [
+        {
+          "value": "10:20",
+          "start": 6,
+          "end": 11,
+          "context": "తరగతి 10:20కి ప్రారంభమవ"
+        }
+      ],
+      "removed_source": "తరగతి కి ప్రారంభమవుతుంది.",
+      "removed_output": "ക്ലാസ് ആരംഭിക്കുന്നു."
+    },
+    {
+      "language": "te",
+      "source": "ఆమె 7:30కి కార్యాలయానికి చేరుకుంది.",
+      "detection": [
+        {
+          "value": "7:30",
+          "start": 4,
+          "end": 8,
+          "context": "ఆమె 7:30కి కార్యాలయా"
+        }
+      ],
+      "removed_source": "ఆమె కి కార్యాలయానికి చేరుకుంది.",
+      "removed_output": "അവൾ കി ഓഫീസിൽ എത്തി."
+    },
+    {
+      "language": "te",
+      "source": "మేము రేపు 6:45కి కలుస్తాము.",
+      "detection": [
+        {
+          "value": "6:45",
+          "start": 10,
+          "end": 14,
+          "context": "మేము రేపు 6:45కి కలుస్తాము"
+        }
+      ],
+      "removed_source": "మేము రేపు కి కలుస్తాము.",
+      "removed_output": "നാളെ നമ്മൾ കണ്ടുമുട്ടും."
+    },
+    {
+      "language": "kn",
+      "source": "ನಾನು 4:15ಕ್ಕೆ ಮನೆಗೆ ಬರುತ್ತೇನೆ.",
+      "detection": [
+        {
+          "value": "4:15",
+          "start": 5,
+          "end": 9,
+          "context": "ನಾನು 4:15ಕ್ಕೆ ಮನೆಗೆ ಬ"
+        }
+      ],
+      "removed_source": "ನಾನು ಕ್ಕೆ ಮನೆಗೆ ಬರುತ್ತೇನೆ.",
+      "removed_output": "ഞാൻ വീട്ടിലേക്ക് വരും."
+    },
+    {
+      "language": "kn",
+      "source": "ತರಗತಿ 10:20ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+      "detection": [
+        {
+          "value": "10:20",
+          "start": 6,
+          "end": 11,
+          "context": "ತರಗತಿ 10:20ಕ್ಕೆ ಪ್ರಾರಂಭ"
+        }
+      ],
+      "removed_source": "ತರಗತಿ ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+      "removed_output": "ക്ലാസ് ആരംഭിക്കുന്നു."
+    },
+    {
+      "language": "kn",
+      "source": "ಅವರು 7:30ಕ್ಕೆ ಕಚೇರಿಗೆ ತಲುಪಿದರು.",
+      "detection": [
+        {
+          "value": "7:30",
+          "start": 5,
+          "end": 9,
+          "context": "ಅವರು 7:30ಕ್ಕೆ ಕಚೇರಿಗೆ"
+        }
+      ],
+      "removed_source": "ಅವರು ಕ್ಕೆ ಕಚೇರಿಗೆ ತಲುಪಿದರು.",
+      "removed_output": "അവർ ഓഫീസിൽ എത്തി."
+    },
+    {
+      "language": "kn",
+      "source": "ನಾವು ನಾಳೆ 6:45ಕ್ಕೆ ಭೇಟಿಯಾಗುತ್ತೇವೆ.",
+      "detection": [
+        {
+          "value": "6:45",
+          "start": 10,
+          "end": 14,
+          "context": "ನಾವು ನಾಳೆ 6:45ಕ್ಕೆ ಭೇಟಿಯಾಗ"
+        }
+      ],
+      "removed_source": "ನಾವು ನಾಳೆ ಕ್ಕೆ ಭೇಟಿಯಾಗುತ್ತೇವೆ.",
+      "removed_output": "നാളെ നമ്മൾ കണ്ടുമുട്ടും."
+    },
+    {
+      "language": "hi",
+      "source": "मैं 4:15 बजे घर आऊँगा।",
+      "detection": [
+        {
+          "value": "4:15",
+          "start": 4,
+          "end": 8,
+          "context": "मैं 4:15 बजे घर आऊँग"
+        }
+      ],
+      "removed_source": "मैं  बजे घर आऊँगा।",
+      "removed_output": "ഉച്ചകഴിഞ്ഞ് ഞാൻ വീട്ടിലേക്ക് വരും."
+    },
+    {
+      "language": "hi",
+      "source": "कक्षा 10:20 बजे शुरू होगी।",
+      "detection": [
+        {
+          "value": "10:20",
+          "start": 6,
+          "end": 11,
+          "context": "कक्षा 10:20 बजे शुरू हो"
+        }
+      ],
+      "removed_source": "कक्षा  बजे शुरू होगी।",
+      "removed_output": "ഉച്ചകഴിഞ്ഞ് ക്ലാസുകൾ ആരംഭിക്കും."
+    },
+    {
+      "language": "hi",
+      "source": "वह 7:30 बजे कार्यालय पहुँची।",
+      "detection": [
+        {
+          "value": "7:30",
+          "start": 3,
+          "end": 7,
+          "context": "वह 7:30 बजे कार्याल"
+        }
+      ],
+      "removed_source": "वह  बजे कार्यालय पहुँची।",
+      "removed_output": "ഉച്ചകഴിഞ്ഞ് അവൾ ഓഫീസിലെത്തി."
+    },
+    {
+      "language": "hi",
+      "source": "हम कल 6:45 बजे मिलेंगे।",
+      "detection": [
+        {
+          "value": "6:45",
+          "start": 6,
+          "end": 10,
+          "context": "हम कल 6:45 बजे मिलेंगे"
+        }
+      ],
+      "removed_source": "हम कल  बजे मिलेंगे।",
+      "removed_output": "നാളെ രാവിലെ ഞങ്ങൾ കണ്ടുമുട്ടും."
+    },
+    {
+      "language": "en",
+      "source": "I will come home at 4:15.",
+      "detection": [
+        {
+          "value": "4:15",
+          "start": 20,
+          "end": 24,
+          "context": "ome home at 4:15."
+        }
+      ],
+      "removed_source": "I will come home at .",
+      "removed_output": "ഞാൻ വീട്ടിലേക്ക് വരുമെന്ന് ഞാൻ ആഗ്രഹിക്കുന്നു."
+    },
+    {
+      "language": "en",
+      "source": "The class starts at 10:20.",
+      "detection": [
+        {
+          "value": "10:20",
+          "start": 20,
+          "end": 25,
+          "context": "s starts at 10:20."
+        }
+      ],
+      "removed_source": "The class starts at .",
+      "removed_output": "ക്ലാസ് ആരംഭിക്കുന്നു."
+    },
+    {
+      "language": "en",
+      "source": "She reached the office at 7:30.",
+      "detection": [
+        {
+          "value": "7:30",
+          "start": 26,
+          "end": 30,
+          "context": "e office at 7:30."
+        }
+      ],
+      "removed_source": "She reached the office at .",
+      "removed_output": "അവൾ ഓഫീസിൽ എത്തി."
+    },
+    {
+      "language": "en",
+      "source": "We will meet tomorrow at 6:45.",
+      "detection": [
+        {
+          "value": "6:45",
+          "start": 25,
+          "end": 29,
+          "context": "tomorrow at 6:45."
+        }
+      ],
+      "removed_source": "We will meet tomorrow at .",
+      "removed_output": "നാളെ നമ്മൾ കണ്ടുമുട്ടും."
+    }
+  ],
+  "traces": [
+    {
+      "language": "ta",
+      "detection": [
+        {
+          "value": "10:20",
+          "start": 5,
+          "end": 10,
+          "context": "நான் 10:20 மணிக்கு வரு"
+        }
+      ],
+      "original_trace": {
+        "original": "நான் 10:20 மணிக்கு வருவேன்.",
+        "preprocessed": "tam_Taml mal_Mlym नाऩ् < ID1 > मणिक्कु वरुवेऩ् .",
+        "model_input": "tam_Taml mal_Mlym नाऩ् < ID1 > मणिक्कु वरुवेऩ् .",
+        "model_output": "ञाൻ < ऐ. डि. 1 > न् ऎत्तुं.",
+        "postprocessed": "ഞാൻ <ഐ. ഡി. 1> ന് എത്തും.",
+        "final": "ഞാൻ <ഐ. ഡി. 1> ന് എത്തും."
+      },
+      "removed_source": "நான்  மணிக்கு வருவேன்.",
+      "removed_trace": {
+        "original": "நான்  மணிக்கு வருவேன்.",
+        "preprocessed": "tam_Taml mal_Mlym नाऩ् मणिक्कु वरुवेऩ् .",
+        "model_input": "tam_Taml mal_Mlym नाऩ् मणिक्कु वरुवेऩ् .",
+        "model_output": "ञाൻ मणिक्कूऱिनुळ्ळिൽ वरुं.",
+        "postprocessed": "ഞാൻ മണിക്കൂറിനുള്ളിൽ വരും.",
+        "final": "ഞാൻ മണിക്കൂറിനുള്ളിൽ വരും."
+      },
+      "gap_source": "நான் [TIME_REMOVED] மணிக்கு வருவேன்.",
+      "gap_trace": {
+        "original": "நான் [TIME_REMOVED] மணிக்கு வருவேன்.",
+        "preprocessed": "tam_Taml mal_Mlym नाऩ् [ TIME _ REMOVED ] मणिक्कु वरुवेऩ् .",
+        "model_input": "tam_Taml mal_Mlym नाऩ् [ TIME _ REMOVED ] मणिक्कु वरुवेऩ् .",
+        "model_output": "ञाൻ [ टैं _ ऱिमोव् ] - लेक्क् वरुं.",
+        "postprocessed": "ഞാൻ [ടൈം _ റിമോവ്]-ലേക്ക് വരും.",
+        "final": "ഞാൻ [ടൈം _ റിമോവ്]-ലേക്ക് വരും."
+      }
+    },
+    {
+      "language": "ta",
+      "detection": [
+        {
+          "value": "6:45",
+          "start": 6,
+          "end": 10,
+          "context": "ரயில் 6:45 மணிக்கு புற"
+        }
+      ],
+      "original_trace": {
+        "original": "ரயில் 6:45 மணிக்கு புறப்படும்.",
+        "preprocessed": "tam_Taml mal_Mlym रयिल् \\1ः45 मणिक्कु पुऱप्पटुम् .",
+        "model_input": "tam_Taml mal_Mlym रयिल् \\1ः45 मणिक्कु पुऱप्पटुम् .",
+        "model_output": "ट्रॆयिൻ \\1:45 न् पुऱप्पॆटुं.",
+        "postprocessed": "ട്രെയിൻ \\1:45 ന് പുറപ്പെടും.",
+        "final": "ട്രെയിൻ \\1:45 ന് പുറപ്പെടും."
+      },
+      "removed_source": "ரயில்  மணிக்கு புறப்படும்.",
+      "removed_trace": {
+        "original": "ரயில்  மணிக்கு புறப்படும்.",
+        "preprocessed": "tam_Taml mal_Mlym रयिल् मणिक्कु पुऱप्पटुम् .",
+        "model_input": "tam_Taml mal_Mlym रयिल् मणिक्कु पुऱप्पटुम् .",
+        "model_output": "ट्रॆयिൻ मणिक्कूऱिൽ पुऱप्पॆटुं.",
+        "postprocessed": "ട്രെയിൻ മണിക്കൂറിൽ പുറപ്പെടും.",
+        "final": "ട്രെയിൻ മണിക്കൂറിൽ പുറപ്പെടും."
+      },
+      "gap_source": "ரயில் [TIME_REMOVED] மணிக்கு புறப்படும்.",
+      "gap_trace": {
+        "original": "ரயில் [TIME_REMOVED] மணிக்கு புறப்படும்.",
+        "preprocessed": "tam_Taml mal_Mlym रयिल् [ TIME _ REMOVED ] मणिक्कु पुऱप्पटुम् .",
+        "model_input": "tam_Taml mal_Mlym रयिल् [ TIME _ REMOVED ] मणिक्कु पुऱप्पटुम् .",
+        "model_output": "ट्रॆयिൻ ( टैं _ ऱिमोव् ) मणिक्कूऱिൽ पुऱप्पॆटुं.",
+        "postprocessed": "ട്രെയിൻ (ടൈം _ റിമോവ്) മണിക്കൂറിൽ പുറപ്പെടും.",
+        "final": "ട്രെയിൻ (ടൈം _ റിമോവ്) മണിക്കൂറിൽ പുറപ്പെടും."
+      }
+    },
+    {
+      "language": "te",
+      "detection": [
+        {
+          "value": "4:15",
+          "start": 10,
+          "end": 14,
+          "context": "சந்திப்பு 4:15க்கு தொடங்கு"
+        }
+      ],
+      "original_trace": {
+        "original": "சந்திப்பு 4:15க்கு தொடங்கும்.",
+        "preprocessed": "tel_Telu mal_Mlym சந்திப்பு \\1ः15க்கு தொடங்கும் .",
+        "model_input": "tel_Telu mal_Mlym சந்திப்பு \\1ः15க்கு தொடங்கும் .",
+        "model_output": "सङ्कीർत्तनं _ 1:15 )",
+        "postprocessed": "സങ്കീർത്തനം _ 1:15)",
+        "final": "സങ്കീർത്തനം _ 1:15)"
+      },
+      "removed_source": "சந்திப்பு க்கு தொடங்கும்.",
+      "removed_trace": {
+        "original": "சந்திப்பு க்கு தொடங்கும்.",
+        "preprocessed": "tel_Telu mal_Mlym சந்திப்பு க்கு தொடங்கும் .",
+        "model_input": "tel_Telu mal_Mlym சந்திப்பு க்கு தொடங்கும் .",
+        "model_output": "शान्तमायिरिक्कुक......................................................................................................................................................................................................",
+        "postprocessed": "ശാന്തമായിരിക്കുക......................................................................................................................................................................................................",
+        "final": "ശാന്തമായിരിക്കുക......................................................................................................................................................................................................"
+      },
+      "gap_source": "சந்திப்பு [TIME_REMOVED]க்கு தொடங்கும்.",
+      "gap_trace": {
+        "original": "சந்திப்பு [TIME_REMOVED]க்கு தொடங்கும்.",
+        "preprocessed": "tel_Telu mal_Mlym சந்திப்பு [ TIME _ REMOVED ] க்கு தொடங்கும் .",
+        "model_input": "tel_Telu mal_Mlym சந்திப்பு [ TIME _ REMOVED ] க்கு தொடங்கும் .",
+        "model_output": "[ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः [ टैं _ ऱॆमोवेड् ] ऎन्नतिलेक्क्ः",
+        "postprocessed": "[ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ",
+        "final": "[ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ [ടൈം _ റെമോവേഡ്] എന്നതിലേക്ക്ഃ"
+      }
+    },
+    {
+      "language": "te",
+      "detection": [
+        {
+          "value": "7:30",
+          "start": 9,
+          "end": 13,
+          "context": "பேருந்து 7:30కి వస్తుంది."
+        }
+      ],
+      "original_trace": {
+        "original": "பேருந்து 7:30కి వస్తుంది.",
+        "preprocessed": "tel_Telu mal_Mlym பேருந்து \\1ः30कि वस्तुंदि .",
+        "model_input": "tel_Telu mal_Mlym பேருந்து \\1ः30कि वस्तुंदि .",
+        "model_output": "ε1:30 न् पॆऱुण्ट् वरुन्नु.",
+        "postprocessed": "ε1:30 ന് പെറുണ്ട് വരുന്നു.",
+        "final": "ε1:30 ന് പെറുണ്ട് വരുന്നു."
+      },
+      "removed_source": "பேருந்து కి వస్తుంది.",
+      "removed_trace": {
+        "original": "பேருந்து కి వస్తుంది.",
+        "preprocessed": "tel_Telu mal_Mlym பேருந்து कि वस्तुंदि .",
+        "model_input": "tel_Telu mal_Mlym பேருந்து कि वस्तुंदि .",
+        "model_output": "पॆऱुण्टुविൽ वरुन्नु.",
+        "postprocessed": "പെറുണ്ടുവിൽ വരുന്നു.",
+        "final": "പെറുണ്ടുവിൽ വരുന്നു."
+      },
+      "gap_source": "பேருந்து [TIME_REMOVED]కి వస్తుంది.",
+      "gap_trace": {
+        "original": "பேருந்து [TIME_REMOVED]కి వస్తుంది.",
+        "preprocessed": "tel_Telu mal_Mlym பேருந்து [ TIME _ REMOVED ] कि वस्तुंदि .",
+        "model_input": "tel_Telu mal_Mlym பேருந்து [ TIME _ REMOVED ] कि वस्तुंदि .",
+        "model_output": "पॆऱुण्ट् [ टैं _ ऱिमोव् ] ऎन्नतिलेक्क् वरुन्नु.",
+        "postprocessed": "പെറുണ്ട് [ടൈം _ റിമോവ്] എന്നതിലേക്ക് വരുന്നു.",
+        "final": "പെറുണ്ട് [ടൈം _ റിമോവ്] എന്നതിലേക്ക് വരുന്നു."
+      }
+    },
+    {
+      "language": "kn",
+      "detection": [
+        {
+          "value": "7:30",
+          "start": 4,
+          "end": 8,
+          "context": "ಸಭೆ 7:30ಕ್ಕೆ ಪ್ರಾರಂಭ"
+        }
+      ],
+      "original_trace": {
+        "original": "ಸಭೆ 7:30ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+        "preprocessed": "kan_Knda mal_Mlym सभॆ \\1ः30क्कॆ प्रारंभवागुत्तदॆ .",
+        "model_input": "kan_Knda mal_Mlym सभॆ \\1ः30क्कॆ प्रारंभवागुत्तदॆ .",
+        "model_output": "योगं \\1:30 न् आरंभिक्कुं.",
+        "postprocessed": "യോഗം \\1:30 ന് ആരംഭിക്കും.",
+        "final": "യോഗം \\1:30 ന് ആരംഭിക്കും."
+      },
+      "removed_source": "ಸಭೆ ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+      "removed_trace": {
+        "original": "ಸಭೆ ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+        "preprocessed": "kan_Knda mal_Mlym सभॆ क्कॆ प्रारंभवागुत्तदॆ .",
+        "model_input": "kan_Knda mal_Mlym सभॆ क्कॆ प्रारंभवागुत्तदॆ .",
+        "model_output": "योगं आरंभिक्कुन्नु.",
+        "postprocessed": "യോഗം ആരംഭിക്കുന്നു.",
+        "final": "യോഗം ആരംഭിക്കുന്നു."
+      },
+      "gap_source": "ಸಭೆ [TIME_REMOVED]ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+      "gap_trace": {
+        "original": "ಸಭೆ [TIME_REMOVED]ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+        "preprocessed": "kan_Knda mal_Mlym सभॆ [ TIME _ REMOVED ] क्कॆ प्रारंभवागुत्तदॆ .",
+        "model_input": "kan_Knda mal_Mlym सभॆ [ TIME _ REMOVED ] क्कॆ प्रारंभवागुत्तदॆ .",
+        "model_output": "योगं आरंभिक्कुन्नत् [ टैं _ ऱिमोव् ] मुतलाण्.",
+        "postprocessed": "യോഗം ആരംഭിക്കുന്നത് [ടൈം _ റിമോവ്] മുതലാണ്.",
+        "final": "യോഗം ആരംഭിക്കുന്നത് [ടൈം _ റിമോവ്] മുതലാണ്."
+      }
+    },
+    {
+      "language": "kn",
+      "detection": [
+        {
+          "value": "11:55",
+          "start": 6,
+          "end": 11,
+          "context": "ಕಚೇರಿ 11:55ಕ್ಕೆ ಮುಚ್ಚುತ"
+        }
+      ],
+      "original_trace": {
+        "original": "ಕಚೇರಿ 11:55ಕ್ಕೆ ಮುಚ್ಚುತ್ತದೆ.",
+        "preprocessed": "kan_Knda mal_Mlym कचेरि < ID1 > क्कॆ मुच्चुत्तदॆ .",
+        "model_input": "kan_Knda mal_Mlym कचेरि < ID1 > क्कॆ मुच्चुत्तदॆ .",
+        "model_output": "ओफीस् < ऐ. डि. 1 > ऎन्नतिलेक्क् अटय्क्कुन्नु.",
+        "postprocessed": "ഓഫീസ് <ഐ. ഡി. 1> എന്നതിലേക്ക് അടയ്ക്കുന്നു.",
+        "final": "ഓഫീസ് <ഐ. ഡി. 1> എന്നതിലേക്ക് അടയ്ക്കുന്നു."
+      },
+      "removed_source": "ಕಚೇರಿ ಕ್ಕೆ ಮುಚ್ಚುತ್ತದೆ.",
+      "removed_trace": {
+        "original": "ಕಚೇರಿ ಕ್ಕೆ ಮುಚ್ಚುತ್ತದೆ.",
+        "preprocessed": "kan_Knda mal_Mlym कचेरि क्कॆ मुच्चुत्तदॆ .",
+        "model_input": "kan_Knda mal_Mlym कचेरि क्कॆ मुच्चुत्तदॆ .",
+        "model_output": "ओफीस् अटय्क्कुन्नु.",
+        "postprocessed": "ഓഫീസ് അടയ്ക്കുന്നു.",
+        "final": "ഓഫീസ് അടയ്ക്കുന്നു."
+      },
+      "gap_source": "ಕಚೇರಿ [TIME_REMOVED]ಕ್ಕೆ ಮುಚ್ಚುತ್ತದೆ.",
+      "gap_trace": {
+        "original": "ಕಚೇರಿ [TIME_REMOVED]ಕ್ಕೆ ಮುಚ್ಚುತ್ತದೆ.",
+        "preprocessed": "kan_Knda mal_Mlym कचेरि [ TIME _ REMOVED ] क्कॆ मुच्चुत्तदॆ .",
+        "model_input": "kan_Knda mal_Mlym कचेरि [ TIME _ REMOVED ] क्कॆ मुच्चुत्तदॆ .",
+        "model_output": "ओफीस् [ टैं _ ऱिमोव् ] ऎन्नतिलेक्क् अटच्चुपूट्टुन्नु.",
+        "postprocessed": "ഓഫീസ് [ടൈം _ റിമോവ്] എന്നതിലേക്ക് അടച്ചുപൂട്ടുന്നു.",
+        "final": "ഓഫീസ് [ടൈം _ റിമോവ്] എന്നതിലേക്ക് അടച്ചുപൂട്ടുന്നു."
+      }
+    },
+    {
+      "language": "hi",
+      "detection": [
+        {
+          "value": "8:40",
+          "start": 3,
+          "end": 7,
+          "context": "बस 8:40 बजे आएगी।"
+        }
+      ],
+      "original_trace": {
+        "original": "बस 8:40 बजे आएगी।",
+        "preprocessed": "hin_Deva mal_Mlym बस \\1ः40 बजे आएगी ।",
+        "model_input": "hin_Deva mal_Mlym बस \\1ः40 बजे आएगी ।",
+        "model_output": "राविलॆ \\1:40 न् बस् ऎत्तुं.",
+        "postprocessed": "രാവിലെ \\1:40 ന് ബസ് എത്തും.",
+        "final": "രാവിലെ \\1:40 ന് ബസ് എത്തും."
+      },
+      "removed_source": "बस  बजे आएगी।",
+      "removed_trace": {
+        "original": "बस  बजे आएगी।",
+        "preprocessed": "hin_Deva mal_Mlym बस बजे आएगी ।",
+        "model_input": "hin_Deva mal_Mlym बस बजे आएगी ।",
+        "model_output": "राविलॆ बस् वरुं.",
+        "postprocessed": "രാവിലെ ബസ് വരും.",
+        "final": "രാവിലെ ബസ് വരും."
+      },
+      "gap_source": "बस [TIME_REMOVED] बजे आएगी।",
+      "gap_trace": {
+        "original": "बस [TIME_REMOVED] बजे आएगी।",
+        "preprocessed": "hin_Deva mal_Mlym बस [ TIME _ REMOVED ] बजे आएगी ।",
+        "model_input": "hin_Deva mal_Mlym बस [ TIME _ REMOVED ] बजे आएगी ।",
+        "model_output": "राविलॆ [ टैं _ ऱिमोव् ] वरुं.",
+        "postprocessed": "രാവിലെ [ടൈം _ റിമോവ്] വരും.",
+        "final": "രാവിലെ [ടൈം _ റിമോവ്] വരും."
+      }
+    },
+    {
+      "language": "hi",
+      "detection": [
+        {
+          "value": "1:05",
+          "start": 6,
+          "end": 10,
+          "context": "ट्रेन 1:05 बजे रवाना ह"
+        }
+      ],
+      "original_trace": {
+        "original": "ट्रेन 1:05 बजे रवाना होगी।",
+        "preprocessed": "hin_Deva mal_Mlym ट्रेन \\1ः05 बजे रवाना होगी ।",
+        "model_input": "hin_Deva mal_Mlym ट्रेन \\1ः05 बजे रवाना होगी ।",
+        "model_output": "ट्रॆयिൻ §1:05 न् पुऱप्पॆटुं.",
+        "postprocessed": "ട്രെയിൻ §1:05 ന് പുറപ്പെടും.",
+        "final": "ട്രെയിൻ §1:05 ന് പുറപ്പെടും."
+      },
+      "removed_source": "ट्रेन  बजे रवाना होगी।",
+      "removed_trace": {
+        "original": "ट्रेन  बजे रवाना होगी।",
+        "preprocessed": "hin_Deva mal_Mlym ट्रेन बजे रवाना होगी ।",
+        "model_input": "hin_Deva mal_Mlym ट्रेन बजे रवाना होगी ।",
+        "model_output": "ट्रॆयिൻ राविलॆ पुऱप्पॆटुं.",
+        "postprocessed": "ട്രെയിൻ രാവിലെ പുറപ്പെടും.",
+        "final": "ട്രെയിൻ രാവിലെ പുറപ്പെടും."
+      },
+      "gap_source": "ट्रेन [TIME_REMOVED] बजे रवाना होगी।",
+      "gap_trace": {
+        "original": "ट्रेन [TIME_REMOVED] बजे रवाना होगी।",
+        "preprocessed": "hin_Deva mal_Mlym ट्रेन [ TIME _ REMOVED ] बजे रवाना होगी ।",
+        "model_input": "hin_Deva mal_Mlym ट्रेन [ TIME _ REMOVED ] बजे रवाना होगी ।",
+        "model_output": "ट्रॆयिൻ ( टैं _ ऱिमोव् ) राविलॆ पुऱप्पॆटुं.",
+        "postprocessed": "ട്രെയിൻ (ടൈം _ റിമോവ്) രാവിലെ പുറപ്പെടും.",
+        "final": "ട്രെയിൻ (ടൈം _ റിമോവ്) രാവിലെ പുറപ്പെടും."
+      }
+    },
+    {
+      "language": "en",
+      "detection": [
+        {
+          "value": "4:15",
+          "start": 22,
+          "end": 26,
+          "context": "g starts at 4:15."
+        }
+      ],
+      "original_trace": {
+        "original": "The meeting starts at 4:15.",
+        "preprocessed": "eng_Latn mal_Mlym The meeting starts at 4 : 15 .",
+        "model_input": "eng_Latn mal_Mlym The meeting starts at 4 : 15 .",
+        "model_output": "4 : 15 न् योगं आरंभिक्कुन्नु.",
+        "postprocessed": "4: 15 ന് യോഗം ആരംഭിക്കുന്നു.",
+        "final": "4: 15 ന് യോഗം ആരംഭിക്കുന്നു."
+      },
+      "removed_source": "The meeting starts at .",
+      "removed_trace": {
+        "original": "The meeting starts at .",
+        "preprocessed": "eng_Latn mal_Mlym The meeting starts at .",
+        "model_input": "eng_Latn mal_Mlym The meeting starts at .",
+        "model_output": "मीऱ्ऱिंग् इविटॆ आरंभिक्कुन्नु.",
+        "postprocessed": "മീറ്റിംഗ് ഇവിടെ ആരംഭിക്കുന്നു.",
+        "final": "മീറ്റിംഗ് ഇവിടെ ആരംഭിക്കുന്നു."
+      },
+      "gap_source": "The meeting starts at [TIME_REMOVED].",
+      "gap_trace": {
+        "original": "The meeting starts at [TIME_REMOVED].",
+        "preprocessed": "eng_Latn mal_Mlym The meeting starts at [ TIME _ REMOVED ] .",
+        "model_input": "eng_Latn mal_Mlym The meeting starts at [ TIME _ REMOVED ] .",
+        "model_output": "मीऱ्ऱिंग् आरंभिक्कुन्नु [ टैं _ ऱिमोव् ].",
+        "postprocessed": "മീറ്റിംഗ് ആരംഭിക്കുന്നു [ടൈം _ റിമോവ്].",
+        "final": "മീറ്റിംഗ് ആരംഭിക്കുന്നു [ടൈം _ റിമോവ്]."
+      }
+    }
+  ],
+  "controls": [
+    {
+      "text": "4:1",
+      "matches": []
+    },
+    {
+      "text": "4:1 ratio",
+      "matches": []
+    },
+    {
+      "text": "3:2",
+      "matches": []
+    },
+    {
+      "text": "2026:10",
+      "matches": []
+    },
+    {
+      "text": "Note: bring your card.",
+      "matches": []
+    },
+    {
+      "text": "The value is 4:15 units.",
+      "matches": [
+        {
+          "value": "4:15",
+          "start": 13,
+          "end": 17,
+          "context": "he value is 4:15 units."
+        }
+      ]
+    }
+  ]
+}

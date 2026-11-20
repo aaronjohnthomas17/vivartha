@@ -1,0 +1,8 @@
+# Install the IndicTrans2 dependencies according to the official model/checkpoint instructions.
+# The exact package set depends on the selected checkpoint and hardware.
+torch
+# IndicTransToolkit 1.1.1 imports legacy Transformers 4.x APIs.
+transformers==4.48.3
+sentencepiece
+flask
+IndicTransToolkit

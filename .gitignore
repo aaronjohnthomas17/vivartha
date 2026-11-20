@@ -1,0 +1,9 @@
+node_modules/
+frontend/dist/
+backend/.env
+translation-service/.venv*/
+translation-service/__pycache__/
+translation-service/*.log
+translation-service/*.err.log
+*.pyc
+.env
