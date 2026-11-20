@@ -7,6 +7,7 @@
 - Added UTF-8, empty-file, text-length, and unsupported-format validation.
 - Added script-based detection for Malayalam, Tamil, Telugu, Kannada, Hindi, with English fallback.
 - Added a frontend file picker, upload action, detected-language display, and extracted text preview.
+- Added a download action that saves the Malayalam result as a UTF-8 text file.
 
 ## Verification
 

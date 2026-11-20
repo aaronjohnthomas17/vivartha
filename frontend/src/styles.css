@@ -2,3 +2,4 @@
 .file-panel { margin: 1rem 0; padding: 1rem; border: 1px solid #d9d7d0; border-radius: 12px; background: #faf9f5; }
 .file-panel input { display: block; margin: .5rem 0; }
 .detected { margin: .75rem 0 0; color: #315c4b; }
+.output-actions { display: flex; gap: .75rem; flex-wrap: wrap; }
